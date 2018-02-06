@@ -15,9 +15,6 @@ public class IndexPage extends ChromeSettings {
     @FindBy(xpath = "//a[@href='/k170.htm']")
     private WebElement categoryMenuItem;
 
-    @FindBy(xpath = "//a[text()='Apple']")
-    private WebElement vendorName;
-
     public IndexPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -28,7 +25,5 @@ public class IndexPage extends ChromeSettings {
         System.out.println("Menu Item selected");
         categoryMenuItem.click();
         System.out.println("Subcategory selected");
-        vendorName.click();
-        System.out.println("Vendor name selected");
     }
 }
