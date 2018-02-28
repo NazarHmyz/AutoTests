@@ -15,7 +15,6 @@ public class Tests extends ChromeSettings {
         indexPage.selectCategoryPC();
         pcPage.selectProduct();
         Assert.assertEquals("Apple iMac 27\" 5K 2017 - купить персональный компьютер: цены, отзывы, характеристики > стоимость в магазинах Украины: Киев, Днепропетровск, Львов, Одесса", driver.getTitle());
-
     }
 
 }
